@@ -51,7 +51,7 @@ $ npm link
 You can install this library as a dependency in any other NPM package:
 
 ```sh
-    import genDiff from '@hexlet/code';
-    const diff = genDiff(filepath1, filepath2);
-    console.log(diff);
+import genDiff from '@hexlet/code';
+const diff = genDiff(filepath1, filepath2);
+console.log(diff);
 ```
