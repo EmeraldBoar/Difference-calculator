@@ -55,3 +55,7 @@ import genDiff from '@hexlet/code';
 const diff = genDiff(filepath1, filepath2);
 console.log(diff);
 ```
+
+## Comparing flat files
+
+[![asciicast](https://asciinema.org/a/TFHbpXQOBBNI73tcSDWvAHDdT.svg)](https://asciinema.org/a/TFHbpXQOBBNI73tcSDWvAHDdT)
