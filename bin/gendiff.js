@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import getInterface from '../src/index.js';
+import { getInterface } from '../index.js';
 
 getInterface();
