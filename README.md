@@ -59,4 +59,8 @@ console.log(diff);
 
 ## Comparing flat files
 
+#### JSON
 [![asciicast](https://asciinema.org/a/TFHbpXQOBBNI73tcSDWvAHDdT.svg)](https://asciinema.org/a/TFHbpXQOBBNI73tcSDWvAHDdT)
+
+#### YAML
+[![asciicast](https://asciinema.org/a/ys1n3S3b6LARaz67rz7o4Mvgz.svg)](https://asciinema.org/a/ys1n3S3b6LARaz67rz7o4Mvgz)

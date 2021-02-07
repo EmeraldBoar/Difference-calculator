@@ -1,14 +1,14 @@
 import path from 'path';
-import fs from 'fs';
 import { has } from './utils.js';
+import parse from './parses.js';
+import getFile from './getFile.js';
 
 const getFlatComparison = (filepath1, filepath2) => {
-  const getFilePath = (filepath) => path.resolve(filepath);
+  const extensionFile1 = path.extname(filepath1);
+  const extensionFile2 = path.extname(filepath2);
 
-  const readFile = (filename) => JSON.parse(fs.readFileSync(getFilePath(filename), 'utf-8'));
-
-  const file1 = readFile(filepath1);
-  const file2 = readFile(filepath2);
+  const file1 = parse(getFile(filepath1), extensionFile1);
+  const file2 = parse(getFile(filepath2), extensionFile2);
 
   const keys = Object.keys({ ...file1, ...file2 });
 

@@ -9,4 +9,4 @@ test:
 test-coverage:
 	npm test -- --coverage --coverageProvider=v8
 diff:
-	gendiff __fixtures__/test1.json __fixtures__/test2.json
+	gendiff __fixtures__/test1.yml __fixtures__/test2.yml

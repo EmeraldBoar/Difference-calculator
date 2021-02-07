@@ -1,5 +1,5 @@
 import program from 'commander';
-import getFlatComparison from './src/getFlatComparison.js';
+import getFlatDifference from './src/getFlatDifference.js';
 
 const getInterface = () => {
   program
@@ -7,9 +7,9 @@ const getInterface = () => {
     .description('Compares two configuration files and shows a difference.')
     .arguments('<filepath1>, <filepath2>')
     .option('--format [type]', 'output format')
-    .action(getFlatComparison);
+    .action(getFlatDifference);
 
   program.parse(process.argv);
 };
 
-export { getInterface, getFlatComparison };
+export { getInterface, getFlatDifference };
